@@ -13,17 +13,17 @@ const LocationSearch = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center justify-center space-x-2 mt-4 w-full">
+    <form onSubmit={handleSubmit} className="flex items-center justify-center space-x-1 mt-0 w-full">
       <input
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         placeholder="Enter city or zip code"
-        className="p-3 w-[90%] border border-gray-300 rounded-l-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+        className="p-4 w-[90%] border border-gray-300 rounded-l-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
       />
       <button
         type="submit"
-        className="p-3 bg-green-500 text-white font-semibold rounded-r-lg shadow-md hover:bg-pink-600 transition duration-300"
+        className="p-5 bg-green-500 text-white font-bold rounded-r-lg shadow-md hover:bg-pink-600 transition duration-300"
       >
         <FontAwesomeIcon icon={faSearch} />
       </button>
